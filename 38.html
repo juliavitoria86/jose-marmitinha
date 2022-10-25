@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>38. Escreva um programa JavaScript para verificar as notas totais de um aluno em vários exames. 
+O aluno obterá nota A+ se o total de notas estiver na faixa de 89..100 inclusive, se o exame for "Exame final".
+ o aluno obterá nota A+ e o total de notas deve ser maior ou igual a 90. Retornar verdadeiro se o aluno obtiver 
+ nota A+ ou falso caso contrário.</h1>  
+<script>function exam_status(totmarks,is_exam)
+    {
+    if (is_exam) {
+      return totmarks >= 90;
+    }
+   return (totmarks >= 89 && totmarks <= 100);
+   }
+  
+  console.log(exam_status("78", " "));
+  console.log(exam_status("89", "true "));
+  console.log(exam_status("99", "true "));</script>
+
+<img src="Capturar38.PNG" alt="">
+</body>
+<html>
+    
